@@ -6,7 +6,7 @@ app.use(express.json());
 let todoItems = []
 
 app.get('/', (req, res) => {
-  res.send({ "message": "welcome to CRUD api !!!" })
+  res.send({ "message": "welcome to todo api !!!" })
 })
 
 app.get('/todos', (req, res) => {

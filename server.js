@@ -10,17 +10,17 @@ app.get('/docs', (req, res) => {
 
 let todoItems = []
 
-app.get('/', (req, res) => {
+app.get('/api/v1/', (req, res) => {
   res.send({ "message": "welcome to todo api !!!" })
 })
 
-app.get('/todos', (req, res) => {
+app.get('/api/v1/todos', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.json(todoItems)
 });
 
 
-app.post('/todos/new', (req, res) => {
+app.post('/api/v1/todos/new', (req, res) => {
   const { title } = req.body;
   const newTodoItem = { id: todoItems.length + 1, title }
   todoItems.push(newTodoItem)
@@ -28,7 +28,7 @@ app.post('/todos/new', (req, res) => {
 });
 
 
-app.put('/todos/:id', (req, res) => {
+app.put('/api/v1/todos/:id', (req, res) => {
   const { id } = req.params;
   const { title } = req.body;
   const todoItem = todoItems.find(item => item.id === parseInt(id));
@@ -41,7 +41,7 @@ app.put('/todos/:id', (req, res) => {
 });
 
 
-app.delete('/todos/:id', (req, res) => {
+app.delete('/api/v1/todos/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const index = todoItems.findIndex(item => item.id === id);
   if (index === -1) return res.status(404).send('To-do item not found');

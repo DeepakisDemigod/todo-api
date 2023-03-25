@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static('public'))
 app.use(express.json());
 
-app.get('/home', (req, res) => {
+app.get('/docs', (req, res) => {
   res.render('index')
 })
 

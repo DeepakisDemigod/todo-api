@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+  
+  <nav>
+    <header>
+      <div class="logo">&lt;todo-api&gt;</div>
+      <ul>
+        <a href="../index.html"><li>/home</li></a>
+        <a href="https://github.com/DeepakisDemigod/todo-api" target="_blank"><li>/repo</li></a>
+      </ul>
+    </header>
+  </nav>
+  
+  <main>
+    <br>
+    <div class="doc_head">
+      <h4 class="head">api documentation</h4>
+      <a class="view_on_github" href="https://github.com/DeepakisDemigod/todo-api"<button class="view"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png?20180806170715" alt="github"><span>view on github</span></button></a>
+    </div>
+    
+    <span class="intro">todo app made in backend via RESTful API.</span>
+    <button class="version">current version 1.0.0</button>
+    <br>
+    <br>
+    <hr>
+    <h4 class="head">about this project</h4>
+    <br>
+    <p class="intro">after getting tired of making todo list apps in frontend, I switched to backend, api os free to use.</p>
+    <br>
+    <hr>
+    <h4 class="head">api</h4>
+    <br>
+    <p class="intro">you can access the api through <a href="https://todo-api-hes2.onrender.com">https://todo-api-hes2.onrender.com</a></p><br>
+    <div class="input-container">
+      <span class="intro">base url</span><input class="url" readonly value="https://todo-api-hes2.onrender.com">
+    </div>
+    <br>
+    <hr>
+    <br>
+    
+    <h4 class="head">endpoints</h4>
+    <br>
+    <p class="intro">below are described the rest endpoints available that you can use to make requests.</p>
+    <br>
+    <br>
+    <button class="get">GET</button> <span class="url-code">{base-url}/</span>
+    <br>
+    <p class="intro"><b>Desc : </b>api welcomes you.</p>
+    <br>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 200</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">{
+  "message": "welcome to todo api!!!"
+}</textarea>
+    </div>
+    <br>
+    
+    <button class="get">GET</button> <span class="url-code">{base-url}/todos</span>
+    <br>
+    <p class="intro"><b>Desc : </b>this endpoint will retrieve all the todos. the todos are stored inside object and them inside an array.</p>
+    <br>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 200</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">[]</textarea>
+    </div>
+    <br>
+    
+    <button class="post">POST</button> <span class="url-code">{base-url}/todos/new</span>
+    <br>
+    <p class="intro"><b>Desc : </b>this endpoint will create a new todo item and push it to array that stores all your todos.</p>
+    <br>
+    <div class="req-body">
+      <div class="headbar">
+        <span>Request</span>
+        <span>Body/Raw</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">{
+  "title": "get the milk"
+}</textarea>
+<br>
+    </div>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 201</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">{
+  "id": 1,
+  "title": "welcome to todo api!!!"
+}</textarea>
+    </div>
+    <br>
+    
+    <button class="put">PUT</button> <span class="url-code">{base-url}/todos/:id</span>
+    <br>
+    <p class="intro"><b>Desc : </b>this endpoint will help you update an already existing todo item taking in todo id as query parameter inside the url.</p>
+    <br>
+    <div class="req-body">
+      <div class="headbar">
+        <span>Request</span>
+        <span>Body/Raw</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">{
+      "title": "get the milk and almonds"
+    }</textarea>
+    </div>
+    <br>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 200</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">  {
+  "id": 1,
+  "title": "get the milk and almonds"
+  }</textarea>
+    </div>
+    <br>
+    
+    <button class="delete">DELETE</button> <span class="url-code">{base-url}/todos/:id</span>
+    <br>
+    <p class="intro"><b>Desc : </b>this endpoint will allow you to delete existing todo item with it's id taking in as query param.</p>
+    <br>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 200</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">To-do item deleted successfully</textarea>
+    </div>
+    
+    
+  </main>
+  <footer>
+    
+  </footer>
+  
+</body>
+</html>

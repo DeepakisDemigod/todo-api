@@ -1,0 +1,249 @@
+:root {
+  --green: #009B4D;
+  --yellow: #FFCC00;
+  --ivory: #FAF5E9;
+  --coal: #333333; 
+  --blue: #6495ED;
+  --tomato: #FF6347;
+  --sunny: #FFA500;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--coal);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  font-size: 100%;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--coal);
+}
+
+/* nav starts */
+
+nav {
+  background-color: var(--green);
+  color: var(--ivory);
+  padding: 0.7rem;
+}
+
+/* header starts */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  flex: 0.4;
+  font-family: 'Fira code';
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--ivory);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--ivory);
+}
+
+header ul {
+  flex: 0.6;
+  display: flex;
+  justify-content: right;
+  font-size: 0.8rem;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--ivory);
+}
+
+header ul li {
+  font-size: 0.7rem;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+/* header ends */
+
+/* nav ends */
+
+/* main start */
+
+main {
+  padding: 0.7rem;
+}
+
+.doc_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  text-decoration: underline;
+  font-size: 0.8rem;
+  color: var(--coal);
+}
+
+main h3 img {
+  width: 15px;
+}
+
+main .view_on_github {
+  text-decoration: none;
+}
+
+main a .view {
+  display: flex;
+  align-items: center;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--coal);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+}
+
+main .view {
+  border: none;
+  background: transparent;
+}
+
+main .version {
+  background: var(--green);
+  border: none;
+  outline: none;
+  color: var(--ivory);
+  font-size: 0.5rem;
+  padding: 0.3rem 0.6rem;
+}
+
+main a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main a button img {
+  width: 13px;
+  margin-right: 0.4rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1rem;
+}
+
+.intro {
+  font-size: 0.7rem;
+  margin-left: 1rem;
+}
+
+.url {
+  font-family: 'Fira Code', monospace;
+  width: 80%;
+  background: transparent;
+  border: 0.5px solid var(--coal);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.url-code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+.get {
+  background: var(--blue);
+  color: var(--ivory);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.post {
+  background: var(--green);
+  color: var(--ivory);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.put {
+  background: var(--sunny);
+  color: var(--ivory);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.delete {
+  background: var(--tomato);
+  color: var(--ivory);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+}
+
+
+.response .headbar,
+.req-body .headbar {
+  background-color: var(--green);
+  color: var(--ivory);
+  display: flex;
+  justify-content: space-between;
+  width: 352.6px;
+  padding: 0.3rem 0.6rem; 
+}
+
+.response .headbar span ,
+.req-body .headbar span {
+  font-size: 0.7rem;
+}
+
+.response,
+.req-body {
+  text-align: center;
+  width: 372px;
+}
+
+.response textarea,
+.req-body textarea {
+  background: var(--coal);
+  color: var(--ivory);
+  font-size: 0.8rem;
+  font-family: 'Fira code', monospace;
+  resize: none;
+  width: 370px;
+}
+
+/* main ends */
+
+/* footer start */
+
+/* footer ends */
+
+

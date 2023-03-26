@@ -42,7 +42,7 @@
     <br>
     <p class="intro">you can access the api through <a href="https://todo-api-hes2.onrender.com">https://todo-api-hes2.onrender.com</a></p><br>
     <div class="input-container">
-      <span class="intro">base url</span><input class="url" readonly value="https://todo-api-hes2.onrender.com">
+      <span class="intro">base url</span><input class="url" readonly value="https://todo-api-hes2.onrender.com/api/v1">
     </div>
     <br>
     <hr>
@@ -70,7 +70,7 @@
     
     <button class="get">GET</button> <span class="url-code">{base-url}/todos</span>
     <br>
-    <p class="intro"><b>Desc : </b>this endpoint will retrieve all the todos. the todos are stored inside object and them inside an array.</p>
+    <p class="intro"><b>Desc : </b>this endpoint will retrieve all the todos. the todos are stored inside object and them inside an array. initially this will return an empty array because there is nothing in your todo-list.</p>
     <br>
     <div class="response">
       <div class="headbar">
@@ -102,10 +102,33 @@
       </div>
       <textarea draggable="true" readonly rows="8" cols="40">{
   "id": 1,
-  "title": "welcome to todo api!!!"
+  "title": "get the milk"
 }</textarea>
     </div>
     <br>
+
+    <button class="get">GET</button> <span class="url-code">{base-url}/todos</span>
+    <br>
+    <p class="intro"><b>Desc : </b>after creating some todo items you cab see your todo stored in the array in form of a object.</p>
+    <br>
+    <div class="response">
+      <div class="headbar">
+        <span>Response</span>
+        <span>Status: 200</span>
+      </div>
+      <textarea draggable="true" readonly rows="8" cols="40">[
+	{
+		"id": 1,
+		"title": "get the milk"
+	},
+	{
+		"id": 2,
+		"title": "get the almonds"
+	}
+]</textarea>
+    </div>
+    <br>
+
     
     <button class="put">PUT</button> <span class="url-code">{base-url}/todos/:id</span>
     <br>
@@ -116,9 +139,9 @@
         <span>Request</span>
         <span>Body/Raw</span>
       </div>
-      <textarea draggable="true" readonly rows="8" cols="40">{
-      "title": "get the milk and almonds"
-    }</textarea>
+      <textarea draggable="true" readonly rows="8" cols="40"> {
+    "title": "get the milk and almonds"
+}</textarea>
     </div>
     <br>
     <div class="response">
@@ -127,8 +150,8 @@
         <span>Status: 200</span>
       </div>
       <textarea draggable="true" readonly rows="8" cols="40">  {
-  "id": 1,
-  "title": "get the milk and almonds"
+    "id": 1,
+    "title": "get the milk and almonds"
   }</textarea>
     </div>
     <br>

@@ -7,7 +7,7 @@ api to test http method
 - DELETE - to delete a todo. Endpoint - /todos/:id
 
 This todo-api is deployed to use at
-https://todo-api-hes2.onrender.com
+https://todo-api-hes2.onrender.com/api/v1
 
 To make all these request use endpoints provided
-above starting with 'https://todo-api-hes2.onrender.com/YOUR_ENDPOINT'
+above starting with 'https://todo-api-hes2.onrender.com/api/v1/YOUR_ENDPOINT'

@@ -11,3 +11,6 @@ https://todo-api-hes2.onrender.com/api/v1
 
 To make all these request use endpoints provided
 above starting with 'https://todo-api-hes2.onrender.com/api/v1/YOUR_ENDPOINT'
+
+Documentation for Javascript
+https://todo-api-hes2.onrender.com/docs/docs.html

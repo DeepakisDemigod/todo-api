@@ -1,6 +1,10 @@
 # **TODO API**
 ![logo](SAVE_20230325_110245-removebg-preview.png)
 
+
+[![.github/workflows/azure-webapps-node.yml](https://github.com/DeepakisDemigod/todo-api/actions/workflows/azure-webapps-node.yml/badge.svg)](https://github.com/DeepakisDemigod/todo-api/actions/workflows/azure-webapps-node.yml)
+
+
 ## todo-api
 this is a restful api made using the nodejs, todo-api is an api that allows you to make requests for features similar to a todo app.
 

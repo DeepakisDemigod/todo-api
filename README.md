@@ -1,16 +1,34 @@
-# Todo API
-api to test http method 
+# **TODO API**
 
-- GET - to get all the todos. Endpoint /todos
-- POST - to create a todo. Endpoint /todos/:id
-- PUT - to update a todo. Endpoint - /todos/:id
-- DELETE - to delete a todo. Endpoint - /todos/:id
+## todo-api
+this is a restful api made using the nodejs, todo-api is an api that allows you to make requests for features similar to a todo app.
+---
+## ***npm dependencies***
+1. node `v18.14.1`
+2. express `v4.18.2`
+---
+## ***documentation***
 
-This todo-api is deployed to use at
-https://todo-api-hes2.onrender.com/api/v1
+### ***base-url*** `https://todoapi.tech/api/v1`
 
-To make all these request use endpoints provided
-above starting with 'https://todo-api-hes2.onrender.com/api/v1/YOUR_ENDPOINT'
+1. `GET` /todos
+   - this endpoint help you retrieve all the created todos and returns you.
+
+2. `POST` /todos/:id
+   - 
+
+3. `PUT` /todos/:id
+   - 
+
+4. `DELETE` /todos/:id
+   - 
+
+> you can read the docs [here](https://todoapi.tech/docs/docs.html)
+`https://todoapi.tech`
+
+
+
+
 
 Documentation for Javascript
-https://todo-api-hes2.onrender.com/docs/docs.html
+`https://todoapi.tech/docs/docs.html`

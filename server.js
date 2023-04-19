@@ -33,7 +33,10 @@ app.put('/api/v1/todos/:id', (req, res) => {
   const { title } = req.body;
   const todoItem = todoItems.find(item => item.id === parseInt(id));
   if (!todoItem) {
-    res.status(404).send('To-do item not found');
+    res.status(404).send({
+      "message": "todo item not found",
+      "status": 404
+    });
   } else {
     todoItem.title = title;
     res.json(todoItem);
@@ -46,7 +49,10 @@ app.delete('/api/v1/todos/:id', (req, res) => {
   const index = todoItems.findIndex(item => item.id === id);
   if (index === -1) return res.status(404).send('To-do item not found');
   todoItems.splice(index, 1);
-  res.send('To-do item deleted successfully');
+  res.send({
+    "message": "todo item deleted successfully",
+    "status": 200
+  });
 });
 
 
